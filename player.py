@@ -14,10 +14,16 @@ class Player(Turtle):
         self.color('white')
         self.speed(0)
         self.seth(90)
-        self.goto(STARTING_POSITION)
+        self.go_to_start()
 
     def move_up(self):
-        self.forward(10)
+        self.forward(MOVE_DISTANCE)
 
-    def next_level_shit(self):
+    def go_to_start(self):
         self.goto(STARTING_POSITION)
+
+    def is_at_finish(self):
+        if self.ycor() > FINISH_LINE:
+            return True
+        else:
+            return False
