@@ -1,2 +1,2 @@
 # turtle-crossing
-frogger, but not copyright infrigement
+frogger, but without copyright infrigement
